@@ -9,3 +9,6 @@ KOTELO https://www.printables.com/model/147999-macpi-studio/comments
 
 ### Tuosta edestä jätetään ISO Ympyrä mutta sitäkin pienemmäksi
 ![kuva](https://github.com/mazkdevf/raspberrypi3b-usb-formatter/assets/79049205/b7f14072-bb53-4710-84fc-7eed1ccd7ee6)
+
+
+![kuva](https://github.com/mazkdevf/raspberrypi3b-usb-formatter/assets/79049205/a22676b2-d280-451b-afe1-8e5dac1cb01a)
