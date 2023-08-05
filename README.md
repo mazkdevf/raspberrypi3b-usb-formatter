@@ -1,14 +1,41 @@
 # raspberrypi3b-usb-formatter
 
-KOTELO https://www.printables.com/model/147999-macpi-studio/comments
+### Daemon startup skripti:
 
+1. 
+```
+sudo nano /etc/systemd/system/usbf.service
+```
 
-### TUO REIKÄ UMPEEN: 
-![kuva](https://github.com/mazkdevf/raspberrypi3b-usb-formatter/assets/79049205/d0b99bbc-2280-4278-b730-0eb8b42005f9)
+2.
 
+```bash
+[Unit]
+Description=USB Formatoija
+After=multi-user.target
 
-### Tuosta edestä jätetään ISO Ympyrä mutta sitäkin pienemmäksi
-![kuva](https://github.com/mazkdevf/raspberrypi3b-usb-formatter/assets/79049205/b7f14072-bb53-4710-84fc-7eed1ccd7ee6)
+[Service]
+ExecStart=/bin/bash -c "sudo /usr/bin/python3 /home/rasp/usbf/format.py"
+WorkingDirectory=/home/rasp/usbf
+User=root
+Restart=always
+Environment="SUDO_COMMAND=/usr/bin/python3 /home/rasp/usbf/format.py"
 
+[Install]
+WantedBy=multi-user.target
+```
 
-![kuva](https://github.com/mazkdevf/raspberrypi3b-usb-formatter/assets/79049205/a22676b2-d280-451b-afe1-8e5dac1cb01a)
+3. CTRL + X + Y + ENTER
+
+4. Restarttaus
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart usbf.service
+```
+
+5. Status
+
+```bash
+sudo systemctl status usbf.service
+```
