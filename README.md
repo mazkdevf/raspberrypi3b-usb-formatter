@@ -50,3 +50,8 @@ sudo systemctl status usbf.service
 
 ![kuva](https://github.com/mazkdevf/raspberrypi3b-usb-formatter/assets/79049205/c7461e8e-4052-471b-987e-ed7ff4444b51)
 
+
+https://randomnerdtutorials.com/installing-raspbian-lite-enabling-and-connecting-with-ssh/
+
+https://pimylifeup.com/raspberry-pi-pip/
+
