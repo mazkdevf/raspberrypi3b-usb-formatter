@@ -1,5 +1,12 @@
 # raspberrypi3b-usb-formatter
 
+## Skriptin installaus
+- Pythoni tarvitaan!
+
+
+1. sudo pip install rpi_ws281x adafruit-circuitpython-neopixel 
+
+
 ### Daemon startup skripti:
 
 1. 
